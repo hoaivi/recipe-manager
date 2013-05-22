@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="http://github.com:80/hoaivi/recipe-manager"/>
+		<item value="http://github.com/hoaivi/recipe-manager"/>
+		<item value="https://github.com:81/hoaivi/recipe-manager"/>
+		<item value="https://github.com/hoaivi/recipe-manager"/>
+		<item value="git://github.com:81/hoaivi/recipe-manager"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+</section>

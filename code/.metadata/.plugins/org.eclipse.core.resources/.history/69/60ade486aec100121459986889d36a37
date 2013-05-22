@@ -1,0 +1,67 @@
+/**
+ * 
+ */
+package psu.team1.common;
+
+import java.util.List;
+
+import org.jsoup.nodes.Document;
+
+/**
+ * @author Steve
+ */
+public class Recipe {
+	private String name;
+	private int numServings;
+	private List<IngredientItem> ingredients;
+	private List<String> instructions;
+
+	// TODO cost
+	// TODO nutrition
+
+	/**
+	 * @param name
+	 * @param numServings
+	 * @param ingredients
+	 * @param instructions
+	 */
+	public Recipe(String name, int numServings,
+			List<IngredientItem> ingredients, List<String> instructions) {
+		this.name = name;
+		this.numServings = numServings;
+		this.ingredients = ingredients;
+		this.instructions = instructions;
+	}
+	
+	public Recipe parseFrom(Document document) {
+		
+	}
+	
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @return the numServings
+	 */
+	public int getNumServings() {
+		return numServings;
+	}
+
+	/**
+	 * @return the ingredients
+	 */
+	public List<IngredientItem> getIngredients() {
+		return ingredients;
+	}
+
+	/**
+	 * @return the instructions
+	 */
+	public List<String> getInstructions() {
+		return instructions;
+	}
+}

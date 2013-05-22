@@ -1,0 +1,5 @@
+package psu.team1.common;
+
+public enum Unit {
+	ounce, pound, cup, teaspoon, tablespoon, can, slice, loaf
+}

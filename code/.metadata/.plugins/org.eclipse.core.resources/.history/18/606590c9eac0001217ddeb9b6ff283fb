@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package psu.team1.common;
+
+import java.util.List;
+
+/**
+ * @author Steve
+ */
+public class Recipe {
+	private String name;
+	private int numServings;
+	private List<IngredientItem> ingredients;
+	private List<InstructionItem> instructions;
+
+	// TODO cost
+	// TODO nutrition
+
+	public Recipe(String name, int numServings,
+			List<IngredientItem> ingredients, List<InstructionItem> instructions) {
+
+	}
+
+}

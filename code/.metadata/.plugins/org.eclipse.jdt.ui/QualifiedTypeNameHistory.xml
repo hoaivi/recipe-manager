@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.jsoup.Jsoup"/>
+<fullyQualifiedTypeName name="org.jsoup.select.Elements"/>
+<fullyQualifiedTypeName name="org.jsoup.nodes.Element"/>
+<fullyQualifiedTypeName name="psu.team1.common.Recipe"/>
+<fullyQualifiedTypeName name="psu.team1.common.IngredientItem"/>
+<fullyQualifiedTypeName name="psu.team1.common.Unit"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="psu.team1.common.IngredientList"/>
+<fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
+</qualifiedTypeNameHistroy>

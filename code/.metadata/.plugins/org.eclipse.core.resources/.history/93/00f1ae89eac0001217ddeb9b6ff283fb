@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package psu.team1.common;
+
+/**
+ * @author Steve
+ */
+public class Recipe {
+	private String name;
+	private int numServings;
+
+	public Recipe() {
+
+	}
+
+}

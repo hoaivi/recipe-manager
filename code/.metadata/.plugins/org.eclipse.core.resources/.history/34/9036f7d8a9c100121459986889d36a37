@@ -1,0 +1,15 @@
+package psu.team1.common;
+
+import java.util.List;
+
+public enum Unit {
+	ounce, pound, cup, teaspoon, tablespoon, can, slice, loaf;
+	
+	public List<String> getUnitStrings() {
+		List<String> strings = new ArrayList<String>();
+		Unit[] values = values();
+		for (Unit value : values) {
+			strings.add(value.toString());
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package psu.team1.common;
+
+public class IngredientItem {
+	private String ingredientName;
+	private double quantity;
+	private Unit quantityUnit;
+	
+	public IngredientItem(String ingredientName, double quantity, Unit quantityUnit) {
+		this.ingredientName = ingredientName;
+		this.quantity = quantity;
+		this.quantityUnit = quantityUnit;
+	}
+	
+	public String getIngredientName() {
+		return ingredientName;
+	}
+}

@@ -1,0 +1,83 @@
+package psu.team1.recipescraper;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import psu.team1.common.IngredientItem;
+import psu.team1.common.Recipe;
+import psu.team1.common.Unit;
+
+/**
+ * @author Steve
+ */
+public class Scraper {
+
+	private static String baseUrl = "http://recipefinder.nal.usda.gov";
+	private static String browseRecipeUrl = baseUrl + "/recipes";
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			Document document = Jsoup.connect(browseRecipeUrl).get();
+			Elements aboutElements = document.getElementsByAttribute("about");
+			for (Element aboutElement : aboutElements) {
+				try {
+					String recipeUrlPiece = aboutElement.attr("about");
+					scrapeRecipe(baseUrl + recipeUrlPiece);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * @param recipeUrl
+	 * @throws IOException
+	 */
+	private static Recipe scrapeRecipe(String recipeUrl) throws IOException {
+		Document document = Jsoup.connect(recipeUrl).get();
+
+		int numServings = 0; // TODO temporary
+
+		Element titleElement = document.getElementsByAttributeValue("id",
+				"page-title").get(0);
+		String name = titleElement.val();
+		List<IngredientItem> ingredients = parseIngredients();
+
+		return new Recipe(name, numServings, ingredients, instructions);
+	}
+
+	private static List<IngredientItem> parseIngredients(Document document) {
+		Elements ingredientRows = document.getElementsByAttributeValue("rel",
+				"v:ingredient");
+		for (Element ingredientRow : ingredientRows) {
+			Element quantityElement = ingredientRow
+					.getElementsByAttributeValue("class", "quantity-unit").get(
+							0);
+			
+			Unit 
+			String quantityText = quantityElement.val();
+			for (Unit unitItem : Unit.values()) {
+				if (quantityText.contains(unitItem.toString())) {
+					
+				}
+			}
+			
+			
+
+			IngredientItem item = new IngredientItem();
+		}
+	}
+}

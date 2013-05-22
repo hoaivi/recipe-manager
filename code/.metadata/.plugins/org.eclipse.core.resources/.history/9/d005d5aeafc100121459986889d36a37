@@ -1,0 +1,5 @@
+package psu.team1.common;
+
+public class IngredientList {
+	private List<Ingredient> ingredients;
+}

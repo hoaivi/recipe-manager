@@ -1,0 +1,20 @@
+package psu.team1.common;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.jsoup.nodes.Document;
+
+public class InstructionList {
+	private List<String> instructions;
+	
+	public InstructionList(List<String> instructions) {
+		this.instructions = instructions;
+	}
+	
+	public static InstructiontList parseFrom(Document document) {
+		// TODO
+		
+		return new InstructiontList(new ArrayList<String>());
+	}
+}

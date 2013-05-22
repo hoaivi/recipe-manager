@@ -1,0 +1,5 @@
+package psu.team1.common;
+
+public abstract class ParsableItem {
+
+}

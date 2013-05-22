@@ -1,0 +1,11 @@
+package psu.team1.common;
+
+import java.util.List;
+
+public class IngredientList {
+	private List<Ingredient> ingredients;
+	
+	public static IngredientList parseFrom(Document document) {
+		
+	}
+}

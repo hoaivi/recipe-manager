@@ -1,0 +1,7 @@
+package psu.team1.common;
+
+public class IngredientItem {
+	private String ingredientName;
+	private String quantity;
+	private Unit unit;
+}
